@@ -21,7 +21,7 @@ const replaceVal = (tempVal,orgVal)=>{
     const server = http.createServer((req, res) => {
         if (req.url == "/") {
           requests(
-            `https://api.openweathermap.org/data/2.5/weather?q=haldwani,uttarakhand&appid=8d180a656c10fb08df89517ce50458c3&units=metric`
+            `YOURAPIKEY`
           )
             .on("data", (chunk) => {
               const objdata = JSON.parse(chunk);
