@@ -21,7 +21,7 @@ const replaceVal = (tempVal,orgVal)=>{
     const server = http.createServer((req, res) => {
         if (req.url == "/") {
           requests(
-            `YOURAPIKEY`
+            `YourApiKey`
           )
             .on("data", (chunk) => {
               const objdata = JSON.parse(chunk);
